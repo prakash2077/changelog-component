@@ -1,0 +1,52 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+}
+.changelog{
+    margin: 1rem;
+    width: 80%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: #aaa;
+    margin: 2rem;
+}
+
+.timeline{
+    position: relative;
+    padding: 40px;
+}
+.timeline::before{
+    content: "";
+    position: absolute;
+    top: 65px;
+    bottom: 5px;
+    left: 0;
+    width: 2px;
+    background-color: #000;
+}
+.event{
+    position: relative;
+    padding: 20px 0;
+}
+.event::before{
+    content: "";
+    position: absolute;
+    left: -44px;
+    top: 25px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
